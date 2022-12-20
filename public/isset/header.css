@@ -1,0 +1,14 @@
+.n:hover{
+    border-bottom: 2px solid #F6BD3B;
+    transition: all 0.3s;
+}
+.logo{
+    margin:auto 40px;
+    width: 86px;
+}
+.product{
+    width: 319px;
+    height: 377px;
+    background-color: rgb(146, 146, 146);
+    border-radius: 10px;
+}

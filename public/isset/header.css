@@ -11,3 +11,8 @@
     background-color: rgb(146, 146, 146);
     border-radius: 10px;
 }
+.products{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}

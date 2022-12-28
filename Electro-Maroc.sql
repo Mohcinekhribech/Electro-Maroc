@@ -29,6 +29,7 @@ FOREIGN KEY (adminId) REFERENCES admin(adminId)
 
 create table product (
 productId int primary key not null auto_increment,
+productName varchar(200),
 referenceProduct varchar(500),
 labelProduct varchar(500),
 codeBar varchar(500),

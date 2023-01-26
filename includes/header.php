@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="public/isset/header.css<?php time() ?>">
-    <link rel="stylesheet" href="public/isset/style.css<?php time() ?>">
+    <script src="https://cdn.tailwindcss.com?<?php time() ?>"></script>
+    <link rel="stylesheet" href="public/isset/header.css?<?php time() ?>">
+    <link rel="stylesheet" href="public/isset/style.css?<?php time() ?>">
     <title>electro Maroc</title>
 </head>
 

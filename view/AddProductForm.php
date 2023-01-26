@@ -66,6 +66,6 @@
           </label>
           <textarea name="description" required placeholder="Description" class="block border border w-full text-sm text-sky-700 h-20 rounded-sm my-4 px-2" id="" cols="30" rows="10">Description
           </textarea>
-          <input type="submit" name="submit" class="w-full bg-sky-800 rounded-xl font-bold text-white h-8 cursor-pointer hover:bg-sky-700 " value="Submit">
+          <input type="submit" name="submit" class="w-full bg-sky-800 rounded-xl font-bold text-white h-8 cursor-pointer hover:bg-sky-100 " value="Submit">
     </form>
 </center>

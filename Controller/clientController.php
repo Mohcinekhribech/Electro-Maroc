@@ -18,4 +18,8 @@ class clientController {
         $get = new clientModel;
         return $get->getClientFromDb();
     }
+    function getOneClient($id){
+        $get = new clientModel;
+        return $get->getOneClientFromDb($id);
+    }
 }

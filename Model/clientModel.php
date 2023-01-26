@@ -12,4 +12,10 @@ class clientModel {
         $result=$stmt->fetchAll();
         return $result;
     }
+    public function getOneClientFromDb($id){
+        $conn=connect_to_db();
+        $stmt = $conn->query('select fullName from client where clientId =' . $id);
+        $result = $stmt->fetch();
+        return $result['fullName'];
+    }
 }

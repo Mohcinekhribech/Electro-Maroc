@@ -4,6 +4,7 @@ require_once 'Controller/AdminController.php';
 require_once 'Controller/categoryController.php';
 require_once 'Controller/clientController.php';
 require_once 'Controller/carteController.php';
+require_once 'Controller/orderController.php';
 
 session_start();
 $productAction = new productController;
@@ -11,6 +12,7 @@ $testLogin=new AdminController;
 $categoryAction = new categoryController;
 $client = new clientController;
 $carte = new carteController;
+$order = new orderController;
 
 if(isset($_GET['a']) && isset($_GET['p'])){
     if($_GET['a']=='addp'){
@@ -49,8 +51,17 @@ if(isset($_GET['a']) && isset($_GET['p'])){
     if($_GET['a']=='Logout'){
       $testLogin->Logout();
     }
+    if($_GET['a']=='Confirm'){
+    $order->confirmOrder();
+    }
+    if($_GET['a']=='c'){
+      $order->delete($_GET['id']);
+      }
 }
-$pages=['home','inscription','Login','ProductInfo','Products','AddProductForm','Carte','AddCategoryForm','updateProductForm','updateCategory'];
+if(isset($_GET['id'])&&isset($_GET['status'])){
+  $order->orderStatus();
+}
+$pages=['home','inscription','command','Login','ProductInfo','Products','AddProductForm','Carte','AddCategoryForm','updateProductForm','updateCategory','order'];
 if(!isset($_GET['p'])){
     include 'view/home.php';
 } else if (isset($_GET['p'])) {

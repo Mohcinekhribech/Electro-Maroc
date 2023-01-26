@@ -5,7 +5,6 @@ class carteController{
         $carte=new carteModel;
         $carte->carteM($_GET['pId'], $_GET['cId']);
     }
-
     function productInCarte(){
         $carte=new carteModel;
         return $carte->productInCarteFromDb($_SESSION['clientId']);
